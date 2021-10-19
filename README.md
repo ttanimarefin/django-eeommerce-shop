@@ -1,0 +1,1 @@
+# django-eeommerce-shop
