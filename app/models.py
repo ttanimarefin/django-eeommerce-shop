@@ -20,6 +20,8 @@ class Sub_Category(models.Model):
 
 
 class Product(models.Model):
+    category= models.ForeignKey(Category,on_delete=models.CASCADE, null=False,default='')
+    Sub_category=models.ForeignKey(Sub_Category,on_delete=models.CASCADE, null=False, default='')
     image= models.ImageField(upload_to='ecommerce/pimg')
     name=models.CharField(max_length=100)
     price=models.IntegerField
