@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
-from app.models import Category,Product, Sub_Category
+from app.models import *
+# Category,Product, Sub_Category
 
 from app.models import Category
 from django.contrib.auth import authenticate,login

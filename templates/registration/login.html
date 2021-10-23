@@ -13,11 +13,11 @@
                                  {{field.errors}}
                                  <label>{{field.label_tag}}</label>
                                  <p>{{field}}</p>
-                                 {%endfor%}
-                                 <a herf="#" style="float:right">Forgot Password ?</a><br>
+                                 {% endfor %}
+                                 <a href="#" style="float:right;">Forgot Password ?</a><br>
 
                                  <button class="btn btn-danger" type="submit">Login </button>
-                                 <a herf="{%url 'signup'%}" style="float:right"><span style="color:black;margin-left:130px;">Create Your Account</span></a><br>
+                                 <a href="{% url 'signup' %}" ><span style="color:black;margin-left:120px;">Create Your Account</span></a><br>
                         </form>
                     </div>
             </div>
